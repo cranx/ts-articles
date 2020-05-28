@@ -12,11 +12,7 @@ import TheHeader from '~/components/TheHeader.vue'
 @Component({
   components: { TheHeader }
 })
-export default class PageArticles extends Vue {
-  mounted() {
-    this.$store.dispatch('authors/fetchAuthors')
-  }
-}
+export default class PageArticles extends Vue {}
 </script>
 
 <style lang="scss">
@@ -32,7 +28,8 @@ html {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
