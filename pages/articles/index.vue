@@ -1,10 +1,6 @@
 <template>
   <div class="page-articles">
-    <Article
-      v-for="article in articlesList"
-      :key="article.id"
-      :article="article"
-    ></Article>
+    <Articles :articles="articlesList" />
   </div>
 </template>
 
@@ -12,12 +8,12 @@
 import { Vue, Component, namespace } from 'nuxt-property-decorator'
 import { Context } from '@nuxt/types'
 import ArticleModal from '~/models/Article'
-import Article from '~/components/Article.vue'
+import Articles from '~/components/Articles.vue'
 
 const articles = namespace('articles')
 
 @Component({
-  components: { Article }
+  components: { Articles }
 })
 export default class PageArticles extends Vue {
   @articles.State

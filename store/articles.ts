@@ -26,7 +26,7 @@ export default class ArticleModule extends VuexModule {
     }
   }
 
-  @Action({ commit: 'setCurrentArticle', rawError:true })
+  @Action({ commit: 'setCurrentArticle' })
   public async fetchArticle(id: number) {
     // Тут конечно должен быть запрос на конкретную статью)
     if (!this.articlesList.length) {
