@@ -1,4 +1,4 @@
-# im-test
+# ts-articles
 
 > My wonderful Nuxt.js project
 
