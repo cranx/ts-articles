@@ -45,9 +45,6 @@ export default class Article extends Vue {
 
 <style lang="scss">
 .article {
-  padding: 15px 0;
-  border-bottom: 1px dashed black;
-
   &--viewed {
     opacity: 0.5;
   }
